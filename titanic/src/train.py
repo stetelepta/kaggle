@@ -32,9 +32,8 @@ def create_model(nodes=1):
 model = KerasClassifier(build_fn=create_model, verbose=0)
 
 # define the grid search parameters
-epochs = [10]
-# nodes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-nodes = [1, 2]
+epochs = [1000, 5000]
+nodes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
 # setup grid
 param_grid = dict(nodes=nodes, epochs=epochs)
